@@ -9,5 +9,7 @@ def factorial(n):
   >>> factorial(16)
   20922789888000
   """
-  return n if n == 1 else n * factorial(n - 1)
-  
+  if n > 0:
+    return n if n == 1 else n * factorial(n - 1)
+  else:
+    return None
